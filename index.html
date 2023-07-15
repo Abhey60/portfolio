@@ -21,16 +21,18 @@
               <div class="navbar">
                 <nav>
                   <div class="logo">
-                      <h2><span>A</span>BHEY</h2>
+                      <h2><span>A</span>bhey</h2>
                   </div>
-                  <ul>
+                  <ul class="nav_ul" id="nav_ul">
                       <li><a href="#home">Home</a></li>
                       <li><a href="#about">About</a></li>
                       <li><a href="contact.html"target="_blank">Contact</a></li>
-                      <li><a href="#our_service">service</a></li>
-                  </ul>
-                  <img src="images/cart.png" class="card-item">
-              </nav>
+                      <li><a href="#our_service">Service</a></li>
+                      <i id="cancel" class="fa-solid fa-xmark hcancel"></i>
+                    </ul>
+                    <!-- <img src="images/cart.png" class="card-item"> -->
+                    <i class="fa-solid fa-bars hberger"></i>
+                  </nav>
               </div>
 
                 <div class="text-box">
@@ -44,13 +46,14 @@
    <div class="section_2" >
         <div class="signature" >
             <div class="animation"data-aos="fade-up" >
-                <h1>Abhey Sharma</h1>
+                <h1>Abhey</h1>
             </div>
-           <div class="details"data-aos="fade-up">
+           <div class="details"data-aos="fade-up" style="text-align: center;">
             UI/UX Designer & Front-end Developer
-           </div> 
+            <div><button class="btn"><a style="text-decoration: none; color: black;" href="abhe cv (2).pdf" download>Dowload CV</a></button></div>
+           </div>      
         </div>
-   </div>
+      </div>
    <section class="our_service_section" id="our_service">
     <h2 class="section_title">Our Services</h2>
     <p class="section_details">
@@ -127,17 +130,17 @@
             <h2 class="title"data-aos="fade-right">About me</h2>
             <div class="about-content">
                 <div class="column left"data-aos="fade-right">
-                    <img src="images/bg1.jpg" alt="img">
+                    <img src="images/pic.jpeg" alt="img">
                 </div>
                 <div class="column right"data-aos="fade-right">
                     <div class="text">
-                        <h3>I'm abhey.I'm a <span class="change_content" data-aos="fade-right"></span></h3></div>
-                    <p> And I am 20 years young boy with  dynamic and enthusiastic person looking for the job Web Design and Development mostly specializing in front end development. A firm believer in my own abilities, I am also a
+                        <h3>I'm Abhey.I'm a <span class="change_content" data-aos="fade-right"></span></h3></div>
+                    <p> And I am 20 years young Boys with  dynamic and enthusiastic person looking for the job Web Design and Development mostly specializing in front end development. A firm believer in my own abilities, I am also a
                         team player who thrives in a challenging environment.I am a fresher with new and dynamics project ideas. Well-versed in numerous programming languages including HTML5,CSS, C,C++,Visual Basic and strong background in project management and customer relations. </p>
                         <div class="about_contact">
-                        <p class="email"><span>Email:</span>abheysharma60@gmail.com</p>
-                        <p class="phone"><span>Phone Number:</span>7206342248</p>
-                        </div>
+                        <p class="email"><span>Email:</span>sadhnarana67@gmail.com</p>
+                        <p class="phone"><span>Phone Number:</span>9813472112</p>
+                    </div>
 
                 </div>
             </div>
@@ -147,8 +150,8 @@
    <footer>
     <div class="footer">
     <div class="row">
-    <a href=" https://www.facebook.com/abhey.sharma.5059"target="_blank"><i class="fa fa-facebook"></i></a>
-    <a href=" https://instagram.com/abhe3817?igshid=MzNlNGNkZWQ4Mg=="target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.facebook.com/abhey.sharma.5059"target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="https://instagram.com/abhe3817?igshid=MzNlNGNkZWQ4Mg=="target="_blank"><i class="fa fa-instagram"></i></a>
     <a href="https://www.linkedin.com/in/abhey-sharma-b82177259?trk=contact-info"target="_blank"><i class="fa fa-linkedin"></i></a>
     </div>
 
@@ -163,13 +166,14 @@
     </div>
 
     <div class="row">
-    Copyright © 2021  - All rights reserved || Designed By: Abhey
+    Copyright © 2021  - All rights reserved || Designed By: Shalu
     </div>
     </div>
     </footer>
 
 
 
+    <script src="https://kit.fontawesome.com/1c7c1e5e5e.js" crossorigin="anonymous"></script>
 
 <!-- AOS Data Part -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -178,6 +182,23 @@
     offset:300,
     duration:1000
   });
+</script>
+
+<script>
+  let nav=document.getElementById("nav_ul");
+  document.querySelector(".hberger").addEventListener(
+    "click",
+    function (){
+      nav.style.right="0px"
+    }
+  )
+  document.querySelector(".hcancel").addEventListener(
+    "click",
+    function (){
+      nav.style.right="-200px"
+    }
+  )
+
 </script>
 
 </body>
